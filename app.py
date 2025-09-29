@@ -44,11 +44,7 @@ if not st.session_state.setup_complete:
 
     st.session_state['skills'] = st.text_area(label = 'Skills', value= st.session_state['skills'], height= None, max_chars = 200, placeholder='List your skills')
 
-
-    #st.write(f"**Your Name:** {st.session_state['name']}")
-    #st.write(f"**Your Experience:** {st.session_state['experience']}")
-    #st.write(f"**Your Skills:** {st.session_state['skills']}")
-
+   
 
     st.subheader('Company and Position', divider='rainbow')
 
@@ -77,9 +73,7 @@ if not st.session_state.setup_complete:
         "Choose company",
         ('Google', 'Meta', 'Udemy','365 Company', 'Nestle', 'Linkedin', 'Spotify'))
 
-
-    #st.write(f"**Your information**: {st.session_state["level"]} {st.session_state["position"]} at {st.session_state["company"]}")
-
+   
     if st.button("start interview", on_click=complete_setup):
         st.write("Setup complete! Starting interview...")
        
